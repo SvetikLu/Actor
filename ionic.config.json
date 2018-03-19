@@ -1,0 +1,8 @@
+{
+  "name": "actor",
+  "app_id": "1ed00af2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
