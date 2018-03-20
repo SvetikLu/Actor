@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title text-center>LLamadas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item-sliding *ngFor="let personaje of personajes">
+
+      <ion-item (click)="iraActorPage(personaje)">
+
+        <ion-avatar item-left>
+          <img [src]="personaje.img">
+        </ion-avatar>
+
+        <h2>{{ personaje.nombre }}</h2>
+        <p>{{ personaje.titulo }}</p>
+
+      </ion-item>
+
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>
